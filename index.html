@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>калькулятор</title>
+    <script src="/calculator.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="section section-1">
+            <div class="row-title">
+                <p class="row-title-number">01</p>
+                <h2>Укажите информацию об объекте</h2>
+            </div>
+            <div class="row">
+                <div class="row-item">
+                    <div class="subitem">
+                        <p class="subtitle">Тип Объекта</p>
+                        <input type="radio" class="radio-calc" id="radio-kv" value="7" name="type-house" >
+                        <label for="radio-kv">Квартира</label>
+                        <input type="radio" class="radio-calc set-tanhaus" id="radio-tanhaus" value="8" name="type-house">
+                        <label for="radio-tanhaus">Коттедж/Таунхаус</label>
+                    </div>
+                </div>
+                <div class="row-vertical-line"></div>
+                <div class="row-item">
+                    <div class="subitem">
+                        <p class="subtitle">Вид Объекта</p>
+                        <input type="radio" class="radio-calc" id="radio-view" value="3" name="view-house" >
+                        <label for="radio-view">Вторичное жилье</label>
+                        <input type="radio" class="radio-calc" id="radio-view-new" value="0" name="view-house">
+                        <label for="radio-view-new">Новостройка</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section section-2">
+                <div class="row-title">
+                    <p class="row-title-number">02</p>
+                    <h2>Укажите объем работ</h2>
+                </div>
+                <div class="row">
+                    <div class="row-item">
+                        <div class="subitem">
+                            <p class="subtitle subtitle-area">Площадь квартиры (м2)</p>
+                            <input type="number" class="input-area-value" value=""  placeholder="Ваша площадь" name="apartment-area">
+                            <input type="range" min="0" max="1000" class="range-calc" id="range-area" step="1" value="1" value="2100" name="apartment-area" >
+                        </div>
+                    </div>
+                    <div class="row-item">
+                        <div class="subitem">
+                            <p class="subtitle subtitle-area">Высота потолка(м)</p>
+                            <input type="text" class="input-area-value" value="1" name="ceiling-height">
+                            <input type="range" min="0" max="1000" class="range-calc" id="range-area" step="1" value="1" value="2100" name="ceiling-height" >
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        
+            <div class="itog"></div>
+    </div>
+</body>
+</html>
